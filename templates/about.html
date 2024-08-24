@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados del Cálculo de Velocidad</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"></script> 
+    <div class="container">
+        <h1>Resultados del Cálculo de Velocidad</h1>
+        <div class="card mt-4">
+            <div class="card-body">
+                <h5>Datos Ingresados:</h5>
+                <p><strong>Distancia:</strong> {{ distancia }} m</p>
+                <p><strong>Tiempo:</strong> {{ tiempo }} minutos</p>
+                <p><strong>Velocidad Máxima Permitida:</strong> {{ velocidad_maxima }} Km/h</p>
+            </div>
+        </div>
+        <div class="card mt-4">
+            <div class="card-body">
+                <h4><strong>Resultado de la Velocidad Calculada:</strong> {{ resultado }} Km/h</h4>
+                <h4><strong>Se considera lo siguiente: </strong> {{ estado }} {{velocidad_con_porcentaje}}</h4>
+            </div>
+        </div>
+        <a href="/" class="btn btn-primary mt-3">Volver al Inicio</a>
+    </div>
+</body>
+</html>
