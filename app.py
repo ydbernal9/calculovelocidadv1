@@ -30,7 +30,6 @@ def calcular():
 
     # Realizar el cálculo de la velocidad
     velocidad = float(distancia / 1000) / (tiempo/60)
-    porcentaje = 20
     porcentaje1 = float(velocidad_maxima * (porcentaje/ 100))
     velocidad_con_porcentaje = velocidad_maxima+porcentaje1
 
